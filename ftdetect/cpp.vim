@@ -10,10 +10,16 @@ set expandtab
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
-set showmatch
-
+" Use all the colors
 set t_Co=256
+" Use syntax highlighting
 syntax on
+
+" My prefered indenting options
+set cinoptions=g0:0
+
+" Set up a save and build key
+nmap <Leader>m :wa<CR>:make<CR>
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.

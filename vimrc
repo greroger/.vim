@@ -2,10 +2,22 @@ set nocompatible
 
 execute pathogen#infect()
 
+" Easy on the eyes
 colorscheme solarized
 
+" Move all the specific config to seperate files
 filetype plugin indent on
 
+" Search options
+set showmatch
+set smartcase
+set incsearch
+set scrolloff=999
+
+" Replace default to global
+set gdefault
+
+" This just works better
 let mapleader=","
 
 " Toggle nerd tree window
