@@ -8,6 +8,9 @@ colorscheme solarized
 " Move all the specific config to seperate files
 filetype plugin indent on
 
+" I like multiple files
+set hidden
+
 " Search options
 set showmatch
 set smartcase

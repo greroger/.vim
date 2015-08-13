@@ -16,7 +16,11 @@ set t_Co=256
 syntax on
 
 " My prefered indenting options
-set cinoptions=g0:0
+set cinoptions=g0,:0,(0
+
+" Don't want single line comments to continue
+setlocal comments-=://
+setlocal comments+=f://
 
 " Set up a save and build key
 nmap <Leader>m :wa<CR>:make<CR>
