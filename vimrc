@@ -3,6 +3,7 @@ set nocompatible
 execute pathogen#infect()
 
 " Easy on the eyes
+set background=dark
 colorscheme solarized
 
 " Move all the specific config to seperate files
