@@ -1,7 +1,12 @@
+" This just works better
+let mapleader=","
+
 set nocompatible
 
 execute pathogen#infect()
 
+syntax on
+set t_Co=256
 " Easy on the eyes
 set background=dark
 colorscheme solarized
@@ -26,8 +31,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Replace default to global
 set gdefault
 
-" This just works better
-let mapleader=","
+" Fix the damn backspace
+set backspace=indent,eol,start
 
 " Toggle nerd tree window
 nmap <Leader>n :NERDTreeToggle<CR>

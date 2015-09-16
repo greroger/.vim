@@ -24,6 +24,8 @@ setlocal comments+=f://
 
 " Set up a save and build key
 nmap <Leader>m :wa<CR>:make<CR>
+nnoremap <C-n> :cnext<CR>
+nnoremap <C-p> :cprev<CR>
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
