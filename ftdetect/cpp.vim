@@ -10,11 +10,6 @@ set expandtab
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
-" Use all the colors
-set t_Co=256
-" Use syntax highlighting
-syntax on
-
 " My prefered indenting options
 set cinoptions=g0,:0,(0,N-s,t0
 
