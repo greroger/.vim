@@ -24,5 +24,7 @@ setlocal comments+=f://
 
 " Set up a save and build key
 nmap <Leader>m :wa<CR>:make<CR>
+nnoremap <C-n> :cnext<CR>
+nnoremap <C-p> :cprev<CR>
 
 let g:alternateSearchPath = 'wdr:src/**,wdr:include/**,sfr:../source,sfr:../src,sfr:../include,sfr:../inc'
