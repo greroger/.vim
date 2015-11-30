@@ -6,10 +6,12 @@ set nocompatible
 execute pathogen#infect()
 execute pathogen#helptags()
 
+set mouse=a
+
 syntax on
 set t_Co=256
 " Easy on the eyes
-set background=dark
+set background=light
 colorscheme solarized
 
 " Move all the specific config to seperate files
@@ -18,16 +20,23 @@ filetype plugin indent on
 " I like multiple files
 set hidden
 
+set switchbuf=useopen,usetab
+
 " I like a status line
 set laststatus=2
 
 " Search options
 set showmatch
+set ignorecase
 set smartcase
 set incsearch
 set scrolloff=5
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Setup completion
+set wildmode=list:longest
+set wildmenu
 
 " Replace default to global
 set gdefault
@@ -49,6 +58,17 @@ map <C-k> :wincmd k<CR>
 map <C-l> :wincmd l<CR>
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
 
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_auto_select = 0
