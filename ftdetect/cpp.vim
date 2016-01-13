@@ -1,5 +1,8 @@
 set number
 
+set listchars=tab:>-,trail:·
+set list
+
 set textwidth=80
 set colorcolumn=-2
 set tabstop=4
@@ -23,3 +26,11 @@ nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 
 let g:alternateSearchPath = 'wdr:src/**,wdr:include/**,sfr:../source,sfr:../src,sfr:../include,sfr:../inc'
+
+" Vim
+let g:indentLine_color_term = 239
+
+"GVim
+let g:indentLine_color_gui = '#A4E57E'
+
+let g:indentLine_char = '┆'
