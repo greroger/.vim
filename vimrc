@@ -6,6 +6,7 @@ set nocompatible
 execute pathogen#infect()
 execute pathogen#helptags()
 
+set encoding=utf-8
 set mouse=a
 
 syntax on
@@ -57,8 +58,10 @@ map <C-j> :wincmd j<CR>
 map <C-k> :wincmd k<CR>
 map <C-l> :wincmd l<CR>
 
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+"let g:airline#extensions#tabline#fnamemod = ':t'
+set noshowmode
 
 " Move to the next buffer
 nmap <leader>l :bnext<CR>
