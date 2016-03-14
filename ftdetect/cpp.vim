@@ -25,7 +25,7 @@ nmap <Leader>m :wa<CR>:make<CR>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 
-let g:alternateSearchPath = 'wdr:src/**,wdr:include/**,sfr:../source,sfr:../src,sfr:../include,sfr:../inc'
+let g:alternateSearchPath='wdr:src/**,wdr:include/**,wdr:../common/include/**,wdr:../common/src/**,sfr:../source,sfr:../src,sfr:../include,sfr:../inc'
 
 " Vim
 let g:indentLine_color_term = 239
