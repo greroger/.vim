@@ -12,7 +12,7 @@ set mouse=a
 syntax on
 set t_Co=256
 " Easy on the eyes
-set background=light
+set background=dark
 colorscheme solarized
 
 " Move all the specific config to seperate files
@@ -25,6 +25,15 @@ set switchbuf=useopen,usetab
 
 " I like a status line
 set laststatus=2
+
+" Deal with the window titles
+if &term =~ "screen.*"
+	set t_ts=k
+	set t_fs=\
+endif
+if &term =~ "screen.*" || &term =~ "xterm.*"
+	set title
+endif
 
 " Search options
 set showmatch

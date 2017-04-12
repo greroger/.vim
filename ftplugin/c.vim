@@ -17,8 +17,8 @@ match OverLength /\%81v.\+/
 set cinoptions=g0,:0,(0,N-s,t0
 
 " Don't want single line comments to continue
-setlocal comments-=://
-setlocal comments+=f://
+set comments-=://
+set comments+=f://
 
 " Set up a save and build key
 nmap <Leader>m :wa<CR>:make<CR>
